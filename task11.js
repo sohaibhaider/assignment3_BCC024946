@@ -2,13 +2,17 @@ var A = ["cake", "apple pie", "cookie", "chips", "patties"];
 var B = prompt("Welcome to ABC Bakery. What do you want to order sir/ma'am?", "CAKE");
 var C=-1;
 
-for(i=0;i<A.length;i++)
+//Option 1: Using for Loop to check if B exists in Array A or not
+/*for(i=0;i<A.length;i++)
 {
     if(B.toLowerCase()==A[i])
     {
         C=i;
     }
-}
+}*/
+
+//Option 2: Using indexOf() to check if B is present in Array A or not
+C = A.indexOf(B.toLowerCase());
 
 if(C!=(-1))
 {
